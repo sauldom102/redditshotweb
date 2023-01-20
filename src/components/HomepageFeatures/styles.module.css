@@ -1,0 +1,40 @@
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+    @media all and (max-width: 440px) {
+    }
+
+    grid-gap: 20px;
+    width: 100%;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.featureTitle {
+    margin-top: 24px;
+}
+
+.featureImg {
+    min-width: 400px;
+    height: 400px;
+    aspect-ratio: 1;
+    border-radius: 8px;
+}
+
+@media all and (max-width: 440px) {
+    .features {
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    }
+
+    .featureImg {
+        min-width: 340px;
+        height: 340px;
+    }
+}
