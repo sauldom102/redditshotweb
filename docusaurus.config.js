@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
     title: 'RedditShot',
     tagline: `An API to generate beautiful images from the Reddit posts that you want.`,
-    url: 'https://sauldom102.github.io',
-    baseUrl: '/redditshotweb/',
+    url: 'https://redditshot.com',
+    baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/logo.svg',
