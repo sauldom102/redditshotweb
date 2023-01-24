@@ -35,6 +35,7 @@ const config = {
             ({
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
+                    routeBasePath: '/',
                 },
                 blog: {
                     showReadingTime: true,
@@ -55,7 +56,7 @@ const config = {
             navbar: {
                 title: 'RedditShot',
                 logo: {
-                    alt: 'My Site Logo',
+                    alt: 'RedditShot Logo',
                     src: 'img/logo.svg',
                 },
                 items: [
@@ -121,13 +122,13 @@ const config = {
                     {
                         html: `
                         <div class="footer-menu">
-                        <a href="https://twitter.com/redditshot/" target="_blank" rel="noreferrer noopener" aria-label="Twitter">
+                        <a class="footer-link" href="https://twitter.com/redditshot/" target="_blank" rel="noreferrer noopener" aria-label="Twitter">
                         Twitter                    
                         </a>
-                        <a href="/terms-of-service.html" target="_blank" rel="noreferrer noopener" aria-label="Terms of Service">
+                        <a class="footer-link" href="/terms-of-service.html" target="_blank" rel="noreferrer noopener" aria-label="Terms of Service">
                         Terms of Service                        
                         </a>
-                        <a href="/privacy-policy.html" target="_blank" rel="noreferrer noopener" aria-label="Privacy Policy">
+                        <a class="footer-link" href="/privacy-policy.html" target="_blank" rel="noreferrer noopener" aria-label="Privacy Policy">
                         Privacy Policy                                            
                         </a>
                         </div>

@@ -55,8 +55,11 @@ p {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    --ifm-footer-color: #e3e3e3 !important;
+    --ifm-link-color: var(--ifm-footer-color) !important;
 }
 
-.footer-menu a {
-    color: var(--ifm-footer-color);
+[data-theme='light'] .footer-menu {
+    --ifm-footer-color: #1c1e21 !important;
+    --ifm-link-color: var(--ifm-footer-color) !important;
 }

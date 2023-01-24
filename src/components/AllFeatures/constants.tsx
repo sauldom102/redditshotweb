@@ -39,7 +39,7 @@ export const FEATURES: FeatureItem[] = [
             <>
                 Make it dark or light, based on your preferences. If you don't
                 believe me try to switch the theme in this website and see how
-                images look.
+                images look now.
             </>
         ),
     },
