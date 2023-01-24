@@ -117,7 +117,23 @@ const config = {
                 ],
             },
             footer: {
-                links: [],
+                links: [
+                    {
+                        html: `
+                        <div class="footer-menu">
+                        <a href="https://twitter.com/redditshot/" target="_blank" rel="noreferrer noopener" aria-label="Twitter">
+                        Twitter                    
+                        </a>
+                        <a href="/terms-of-service.html" target="_blank" rel="noreferrer noopener" aria-label="Terms of Service">
+                        Terms of Service                        
+                        </a>
+                        <a href="/privacy-policy.html" target="_blank" rel="noreferrer noopener" aria-label="Privacy Policy">
+                        Privacy Policy                                            
+                        </a>
+                        </div>
+                          `,
+                    },
+                ],
                 copyright: `Copyright © ${new Date().getFullYear()} RedditShot, Inc.`,
             },
             prism: {

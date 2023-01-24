@@ -48,3 +48,15 @@
 p {
     font-size: 1.05rem;
 }
+
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-menu a {
+    color: var(--ifm-footer-color);
+}

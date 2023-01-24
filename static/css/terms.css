@@ -1,0 +1,52 @@
+html {
+    margin: 64px 0;
+}
+
+body {
+    max-width: 80ch;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+[data-custom-class='body'],
+[data-custom-class='body'] * {
+    background: transparent !important;
+}
+[data-custom-class='title'],
+[data-custom-class='title'] * {
+    font-family: Quicksand !important;
+    font-size: 26px !important;
+    color: #000000 !important;
+}
+[data-custom-class='subtitle'],
+[data-custom-class='subtitle'] * {
+    font-family: Quicksand !important;
+    color: #595959 !important;
+    font-size: 14px !important;
+}
+[data-custom-class='heading_1'],
+[data-custom-class='heading_1'] * {
+    font-family: Quicksand !important;
+    font-size: 19px !important;
+    color: #000000 !important;
+}
+[data-custom-class='heading_2'],
+[data-custom-class='heading_2'] * {
+    font-family: Quicksand !important;
+    font-size: 17px !important;
+    color: #000000 !important;
+}
+[data-custom-class='body_text'],
+[data-custom-class='body_text'] * {
+    color: #595959 !important;
+    font-size: 14px !important;
+    font-family: Quicksand !important;
+}
+[data-custom-class='link'],
+[data-custom-class='link'] * {
+    color: #3030f1 !important;
+    font-size: 14px !important;
+    font-family: Quicksand !important;
+    word-break: break-word !important;
+}
