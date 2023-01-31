@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import clsx from 'clsx';
+import mixpanel from 'mixpanel-browser';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
@@ -10,6 +11,11 @@ import AllFeatures from '../components/AllFeatures';
 
 function HomepageHeader() {
     const { siteConfig } = useDocusaurusContext();
+
+    const handlePressGetStarted = useCallback(() => {
+        mixpanel.track('Get Started Button Pressed');
+    }, []);
+
     return (
         <header className={clsx('hero', styles.heroBanner)}>
             <div className="container">
@@ -19,6 +25,7 @@ function HomepageHeader() {
                     <Link
                         className="button button--secondary button--lg"
                         to="https://api.redditshot.com/docs"
+                        onClick={handlePressGetStarted}
                     >
                         Get Started
                     </Link>

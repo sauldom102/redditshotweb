@@ -4,6 +4,8 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+require('dotenv').config();
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: 'RedditShot',
@@ -26,6 +28,10 @@ const config = {
     i18n: {
         defaultLocale: 'en',
         locales: ['en'],
+    },
+
+    customFields: {
+        MIXPANEL_TOKEN: process.env.MIXPANEL_TOKEN,
     },
 
     presets: [

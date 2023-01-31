@@ -5,12 +5,12 @@ import styles from './styles.module.css';
 import { FeatureItem, FEATURES } from './constants';
 
 function Feature({ title, img, darkImg, description }: FeatureItem) {
-    const { isDarkTheme } = useColorMode();
+    const { colorMode } = useColorMode();
 
     return (
         <div className={clsx(styles.feature)}>
             <img
-                src={isDarkTheme ? darkImg : img}
+                src={colorMode === 'dark' ? darkImg : img}
                 alt={title}
                 className={styles.featureImg}
             />
