@@ -141,6 +141,21 @@ const config = {
                 theme: lightCodeTheme,
                 darkTheme: darkCodeTheme,
             },
+            metadata: [
+                {
+                    name: 'keywords',
+                    content:
+                        'reddit, api, preview, images, screenshots, remotion',
+                },
+                {
+                    name: 'og:image',
+                    content: 'https://redditshot.com/img/preview.png',
+                },
+                {
+                    name: 'twitter:image:src',
+                    content: 'https://redditshot.com/img/preview.png',
+                },
+            ],
         }),
 };
 
